@@ -195,6 +195,6 @@ def time_check(df) -> pd.Series:
         incorrect_flags.append(total_slots != complete_week_slots)
     index = pd.MultiIndex.from_tuples(grouped.groups.keys(), names=["id", "id_2"])
     return pd.Series(incorrect_flags, index=index)
-df = pd.read_csv("C:/Users/dev/Downloads/MapUp-DA-Assessment-2024-main/datasets/dataset-1.csv")
+df = pd.read_csv("datasets/dataset-1.csv")
 result = time_check(df)
 print(result)
