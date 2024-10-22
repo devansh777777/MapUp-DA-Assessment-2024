@@ -25,7 +25,7 @@ def calculate_distance_matrix(df)->pd.DataFrame():
                     distance_matrix.at[i, j] = distance_matrix.at[i, k] + distance_matrix.at[k, j]
     
     return distance_matrix
-df = pd.read_csv('C:/Users/dev/Downloads/MapUp-DA-Assessment-2024-main/datasets/dataset-2.csv')
+df = pd.read_csv('datasets/dataset-2.csv')
 distance_matrix = calculate_distance_matrix(df)
 print(distance_matrix)
 
